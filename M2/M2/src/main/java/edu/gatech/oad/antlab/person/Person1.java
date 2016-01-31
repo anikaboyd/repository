@@ -5,8 +5,8 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Bob
- *  @version 1.1
+ *  @author Anika
+ *  @version 1.0
  */
 public class Person1 {
   /** Holds the persons real name */
@@ -29,9 +29,15 @@ public class Person1 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
+    private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+      int length = input.length();
+	  if (length > 2) {
+		  String newWord = input.substring(2) + input.charAt(0) + input charAt(1);
+	  } else if (length <= 2) {
+		  newWord = input;
+	  }
+	  return newWord;
 	}
 	
 	/**
