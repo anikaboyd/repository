@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-=======
-import java.util.ArrayList;
->>>>>>> Stashed changes
+import java.util.ArrayList();
 package edu.gatech.oad.antlab.person;
 
-import java.util.ArrayList;
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -35,12 +31,8 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-      ArrayList<Character> characters = new ArrayList<Character>();
+      ArrayList<Characters> characters = new ArrayList<Characters>();
       String rearranged = "";
-
-      for (int i = 0; i < input.length(); i++) {
-          characters.add(new Character(input.charAt(i)));
-      }
 	  for (int i = 0; i < input.length(); i++) {
           int rand = (int)(Math.random() * characters.size());
           rearranged += characters.remove(rand);
