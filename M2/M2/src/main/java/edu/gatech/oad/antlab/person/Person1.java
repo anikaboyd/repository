@@ -33,7 +33,8 @@ public class Person1 {
 	  //Person 1 put your implementation here
       int length = input.length();
 	  if (length > 2) {
-		  String newWord = input.substring(2) + input.charAt(0) + input charAt(1);
+		  String newWord = input.substring(2, length - 1) + input.charAt(0)
+          + input charAt(1);
 	  } else if (length <= 2) {
 		  newWord = input;
 	  }
