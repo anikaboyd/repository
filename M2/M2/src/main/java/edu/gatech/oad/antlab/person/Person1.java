@@ -34,8 +34,13 @@ public class Person1 {
       int length = input.length();
       String newWord = "";
 	  if (length > 2) {
+<<<<<<< Updated upstream
 		  newWord = input.substring(2, length - 1) + input.charAt(0)
           + input.charAt(1);
+=======
+		  String newWord = input.substring(2, length - 1) + input.charAt(0)
+          	+ input.charAt(1);
+>>>>>>> Stashed changes
 	  } else if (length <= 2) {
 		  newWord = input;
 	  }
